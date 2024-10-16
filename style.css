@@ -1,0 +1,166 @@
+/* Borda superior no portfólio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/img11.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: floatAndFadeBackground 10s ease-in-out infinite; /* Efeito de flutuação e fade */
+    color: white;
+    text-align: center;
+    border-top: 5px solid white;
+}
+
+/* Animação de flutuação e fade da imagem de fundo */
+@keyframes floatAndFadeBackground {
+    0% {
+        opacity: 0; /* Fundo invisível no início */
+        background-position: center top; /* Posição inicial */
+    }
+    25% {
+        opacity: 1; /* Fundo visível */
+        background-position: center 20px; /* Leve movimento para baixo */
+    }
+    50% {
+        opacity: 1; /* Fundo permanece visível no meio da animação */
+        background-position: center -20px; /* Movimento para cima */
+    }
+    75% {
+        opacity: 1; /* Fundo ainda visível */
+        background-position: center 20px; /* Movimento para baixo novamente */
+    }
+    100% {
+        opacity: 0; /* Fundo invisível no final */
+        background-position: center top; /* Volta para a posição inicial */
+    }
+}
+
+
+/* Contato no topo */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+}
+
+.contato p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Biografia */
+.bio {
+    margin-top: 50px;
+}
+
+.bio-content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    justify-content: center;
+}
+
+/* Perfil com efeito flutuante */
+.perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    animation: floatProfile 4s ease-in-out infinite; /* Efeito de flutuação na imagem de perfil */
+}
+
+.bio-content p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Seção Sobre Mim com borda destacada */
+.sobre-mim {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    border-radius: 15px;
+    border: 2px solid white; /* Borda branca */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
+}
+
+.sobre-mim h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Tamanho do título */
+}
+
+.sobre-mim p {
+    text-align: justify;
+    font-size: 18px; /* Tamanho do texto */
+    margin: 10px 0;
+}
+
+/* Projetos */
+.projetos {
+    margin-top: 50px;
+}
+
+.project-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.project-card p {
+    text-align: justify;
+}
+
+/* Carrossel */
+.carousel-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+/* Seção de Contato com borda destacada */
+.contato {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 3px solid white; /* Borda branca */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+}
+
+.contato p {
+    margin: 10px 0;
+    font-size: 16px;
+}
